@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+
+        .R{
+            background-color: red;
+        }
+
+        .G{
+            background-color: green;
+        }
+
+        .B{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <buttom class="RED">RED</buttom>
+        <buttom class="GREEN">GREEN</buttom>
+        <buttom class="BLUE">BLUE</buttom>
+        <script>
+            const btnbg = document.querySelector('.RED');
+            btnbg.addEventListener('click',function () {
+                document.body.classList.toggle('R');
+            });
+            
+            const btnbg1 = document.querySelector('.GREEN');
+            btnbg1.addEventListener('click',function () {
+                document.body.classList.toggle('G');
+            });
+    
+            const btnbg2 = document.querySelector('.BLUE');
+            btnbg2.addEventListener('click',function () {
+                document.body.classList.toggle('B');
+            });
+        </script>
+</body>
+</html>
